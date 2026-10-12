@@ -13,6 +13,7 @@ const BUSCAS = [
 ];
 const META = Number(process.env.META) || 300; // leads novos por execução, somados aos que já estão no leads.json
 const SALVAR_A_CADA = 15;
+const MODO_AVALIACOES = process.argv.includes('--avaliacoes');
 const MAX_ROLAGENS = 45;
 const ARQUIVO = path.join(__dirname, 'leads.json');
 const UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36';
@@ -169,6 +170,19 @@ async function extrairLocal(page, href) {
     const rotulo = (el) => (el ? (el.getAttribute('aria-label') || el.innerText || '').replace(/^[^:]+:\s*/, '').trim() : '');
     const tel = document.querySelector('[data-item-id^="phone:tel:"]');
     const site = document.querySelector('a[data-item-id="authority"]');
+    // Nota e nº de avaliações, no bloco logo abaixo do nome (ex.: "4,8 (123)")
+    const avaliacoes = () => {
+      const bloco = document.querySelector('div.F7nice');
+      if (!bloco) return { totalScore: null, reviewsCount: 0 };
+      const texto = bloco.innerText || '';
+      const rotulos = [...bloco.querySelectorAll('[aria-label]')].map((e) => e.getAttribute('aria-label')).join(' | ');
+      const nota = texto.match(/\d[.,]\d/);
+      const qtd = rotulos.match(/([\d.]+)\s*(avalia|review|coment)/i) || texto.match(/\(([\d.]+)\)/);
+      return {
+        totalScore: nota ? parseFloat(nota[0].replace(',', '.')) : null,
+        reviewsCount: qtd ? parseInt(qtd[1].replace(/\./g, ''), 10) : 0,
+      };
+    };
     // Instagram listado noutro ponto da ficha (ex.: secção de perfis na web)
     const instagram = document.querySelector('div[role="main"] a[href*="instagram.com"]');
     return {
@@ -178,12 +192,13 @@ async function extrairLocal(page, href) {
       siteUrl: site ? site.href : '',
       instagramUrl: instagram ? instagram.href : '',
       mapsUrl: location.href,
+      ...avaliacoes(),
     };
   });
 }
 
 // Esquema final gravado no leads.json
-function montarLead({ nome, nicho, cidade, telefone, digitos, endereco, mapsUrl, siteUrl, instagramUrl, temSite }) {
+function montarLead({ nome, nicho, cidade, telefone, digitos, endereco, mapsUrl, siteUrl, instagramUrl, temSite, totalScore, reviewsCount }) {
   return {
     title: nome,
     subTitle: null,
@@ -207,14 +222,14 @@ function montarLead({ nome, nicho, cidade, telefone, digitos, endereco, mapsUrl,
     plusCode: null,
     menu: null,
     servicesLink: null,
-    totalScore: null,
+    totalScore: totalScore ?? null,
     permanentlyClosed: false,
     temporarilyClosed: false,
     placeId: null,
     categories: [nicho],
     fid: null,
     cid: null,
-    reviewsCount: 0,
+    reviewsCount: reviewsCount ?? 0,
     reviewsDistribution: { oneStar: 0, twoStar: 0, threeStar: 0, fourStar: 0, fiveStar: 0 },
     imagesCount: 0,
     imageCategories: [],
@@ -280,6 +295,8 @@ async function processar(page, candidato, nicho, cidadeBusca) {
     siteUrl,
     instagramUrl,
     temSite,
+    totalScore: dados.totalScore,
+    reviewsCount: dados.reviewsCount,
   });
 
   // Só entram leads sem site próprio (a oportunidade de venda)
@@ -292,6 +309,39 @@ async function processar(page, candidato, nicho, cidadeBusca) {
     console.log(`  -- gravado: ${existentes.length + novos.length} leads no ficheiro (${novos.length} novos)`);
   }
   return true;
+}
+
+// Modo --avaliacoes: revisita os perfis já gravados e preenche totalScore e reviewsCount.
+// Devolve true se o Maps bloquear com CAPTCHA.
+async function atualizarAvaliacoes(page) {
+  const limite = Number(process.env.LIMITE) || Infinity;
+  const pendentes = existentes.filter((l) => l.mapsUrl && l.totalScore == null && !l.reviewsCount).slice(0, limite);
+  console.log(`> A atualizar avaliações de ${pendentes.length} perfis (de ${existentes.length} na base)`);
+  let feitos = 0;
+  let falhas = 0;
+  for (const lead of pendentes) {
+    try {
+      await pausa();
+      // Uma segunda tentativa cobre os carregamentos que falham por timeout
+      const dados = await extrairLocal(page, lead.mapsUrl).catch(() => extrairLocal(page, lead.mapsUrl));
+      lead.totalScore = dados.totalScore;
+      lead.reviewsCount = dados.reviewsCount;
+      feitos++;
+      const nota = dados.totalScore == null ? 'sem avaliações' : `${dados.totalScore} ★ (${dados.reviewsCount})`;
+      console.log(`  [${feitos + falhas}/${pendentes.length}] ${lead.title} — ${nota}`);
+    } catch (e) {
+      falhas++;
+      console.log(`  [${feitos + falhas}/${pendentes.length}] ! ${lead.title}: ${e.message.split('\n')[0]}`);
+    }
+    if (page.url().includes('/sorry/')) return true;
+    if ((feitos + falhas) % SALVAR_A_CADA === 0) {
+      salvar();
+      console.log(`  -- gravado (${feitos} atualizados, ${falhas} falhas)`);
+    }
+  }
+  salvar();
+  console.log(`\n${feitos} perfis atualizados, ${falhas} falhas`);
+  return false;
 }
 
 (async () => {
@@ -321,7 +371,9 @@ async function processar(page, candidato, nicho, cidadeBusca) {
   try {
     const page = await novaPagina(browser);
 
-    busca: for (const { termo, categoria } of BUSCAS) {
+    if (MODO_AVALIACOES) bloqueado = await atualizarAvaliacoes(page);
+
+    busca: for (const { termo, categoria } of MODO_AVALIACOES ? [] : BUSCAS) {
       for (const cidade of CIDADES) {
         let cartoes = [];
         try {
@@ -354,9 +406,9 @@ async function processar(page, candidato, nicho, cidadeBusca) {
 
   salvar();
   const segundos = Math.round((Date.now() - inicio) / 1000);
-  console.log(`\n${novos.length} leads novos + ${existentes.length} existentes = ${existentes.length + novos.length} em ${ARQUIVO}, em ${segundos}s`);
+  if (!MODO_AVALIACOES) console.log(`\n${novos.length} leads novos + ${existentes.length} existentes = ${existentes.length + novos.length} em ${ARQUIVO}, em ${segundos}s`);
   if (bloqueado) console.log('Atenção: o Google Maps pediu CAPTCHA; a recolha parou e o que já havia foi gravado.');
-  else if (novos.length < META) console.log(`Atenção: todas as buscas foram varridas e só havia ${novos.length} leads novos sem site, abaixo da meta de ${META}.`);
+  else if (!MODO_AVALIACOES && novos.length < META) console.log(`Atenção: todas as buscas foram varridas e só havia ${novos.length} leads novos sem site, abaixo da meta de ${META}.`);
 })().catch((e) => {
   console.error('Erro fatal:', e);
   salvar();
