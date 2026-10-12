@@ -44,7 +44,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:18:30.689Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -56,8 +56,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": false,
-    "siteUrl": ""
+    "mapsUrl": "https://www.google.com/maps/place/Centro+Odontol%C3%B3gico+Imperial/data=!4m7!3m6!1s0x99a7fe682bd1af:0x7d753b70e8f7990b!8m2!3d-22.508882!4d-43.1717901!16s%2Fg%2F1tctsx6f!19sChIJr9EraP6nmQARC5n36HA7dX0?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "ELLEVA - Clínica Integrada em Petrópolis - Dentistas / Médicos",
@@ -104,7 +106,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:18:32.313Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -116,8 +118,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": true,
-    "siteUrl": "https://www.instagram.com/ellevaclinicaintegrada?igsh=YXU3dGVqZnI1Mzk=&utm_source=qr"
+    "mapsUrl": "https://www.google.com/maps/place/ELLEVA+-+Cl%C3%ADnica+Integrada+em+Petr%C3%B3polis+-+Dentistas+%2F+M%C3%A9dicos/data=!4m7!3m6!1s0x99a997397b0695:0xa9f7e276f91f412e!8m2!3d-22.507456!4d-43.170506!16s%2Fg%2F11q3_5p7r7!19sChIJlQZ7OZepmQARLkEf-Xbi96k?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": "https://www.instagram.com/ellevaclinicaintegrada?igsh=YXU3dGVqZnI1Mzk=&utm_source=qr",
+    "temSite": false
   },
   {
     "title": "Centro Odontológico Borges",
@@ -164,7 +168,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:18:34.323Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -176,8 +180,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": false,
-    "siteUrl": ""
+    "mapsUrl": "https://www.google.com/maps/place/Centro+Odontol%C3%B3gico+Borges/data=!4m7!3m6!1s0x99a980ca3edd4f:0xd3c41ec2b2d2e631!8m2!3d-22.4427366!4d-43.1405117!16s%2Fg%2F11bbrp6yrp!19sChIJT90-yoCpmQARMebSssIexNM?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "Centro Odontológico Vamos Sorrir Petrópolis",
@@ -224,7 +230,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:18:35.835Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -236,8 +242,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": false,
-    "siteUrl": ""
+    "mapsUrl": "https://www.google.com/maps/place/Centro+Odontol%C3%B3gico+Vamos+Sorrir+Petr%C3%B3polis/data=!4m7!3m6!1s0x9909951fbb6b65:0x93d2c4e3997001e1!8m2!3d-22.5101296!4d-43.1751889!16s%2Fg%2F11p6l2cs48!19sChIJZWu7H5UJmQAR4QFwmePE0pM?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "Sorriso Imperial - Clínica Odontologia e Estética em Petrópolis",
@@ -284,7 +292,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:18:37.289Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -296,8 +304,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": false,
-    "siteUrl": ""
+    "mapsUrl": "https://www.google.com/maps/place/Sorriso+Imperial+-+Cl%C3%ADnica+Odontologia+e+Est%C3%A9tica+em+Petr%C3%B3polis/data=!4m7!3m6!1s0x99a9bcd2e338a1:0x5bcafc5a54bf0d90!8m2!3d-22.5071744!4d-43.1699387!16s%2Fg%2F11lyrct_qb!19sChIJoTjj0rypmQARkA2_VFr8yls?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "Jonas Noel - Dentista em petrópolis",
@@ -344,7 +354,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:18:38.746Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -356,8 +366,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": false,
-    "siteUrl": ""
+    "mapsUrl": "https://www.google.com/maps/place/Jonas+Noel+-+Dentista+em+petr%C3%B3polis/data=!4m7!3m6!1s0x9909178a00f77d:0xb9daf71f92a28991!8m2!3d-22.5116822!4d-43.1804444!16s%2Fg%2F11nb3j5d5b!19sChIJffcAihcJmQARkYmikh_32rk?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "Dent Clinic Odontologia Integrada - Clinica Odontologica em Petrópolis",
@@ -404,7 +416,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:18:40.048Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -416,8 +428,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": false,
-    "siteUrl": ""
+    "mapsUrl": "https://www.google.com/maps/place/Dent+Clinic+Odontologia+Integrada+-+Clinica+Odontologica+em+Petr%C3%B3polis/data=!4m7!3m6!1s0x99a7ffb0f29f85:0xf63be2e1264dd13d!8m2!3d-22.3879264!4d-43.1776413!16s%2Fg%2F1tfn3zcw!19sChIJhZ_ysP-nmQARPdFNJuHiO_Y?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "Odonto Up",
@@ -464,7 +478,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:18:41.704Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -476,8 +490,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": false,
-    "siteUrl": ""
+    "mapsUrl": "https://www.google.com/maps/place/Odonto+Up/data=!4m7!3m6!1s0x9908022b07be9b:0x199f9f6cbfebfd6d!8m2!3d-22.5127906!4d-43.1776295!16s%2Fg%2F11bbrltr3t!19sChIJm74HKwIImQARbf3rv2yfnxk?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "Dra Ana Carolina Souza - Cirurgiã Dentista",
@@ -524,7 +540,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:18:43.050Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -536,8 +552,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": true,
-    "siteUrl": "https://www.instagram.com/dentistaanacarolina_?igsh=NXF0a3NqcGpjeHg1&utm_source=qr"
+    "mapsUrl": "https://www.google.com/maps/place/Dra+Ana+Carolina+Souza+-+Cirurgi%C3%A3+Dentista/data=!4m7!3m6!1s0x99a9525a40bdc1:0x7c0f3b9ce9af2a0f!8m2!3d-22.4420797!4d-43.1388121!16s%2Fg%2F11z1v4l_9r!19sChIJwb1AWlKpmQARDyqv6Zw7D3w?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": "https://www.instagram.com/dentistaanacarolina_?igsh=NXF0a3NqcGpjeHg1&utm_source=qr",
+    "temSite": false
   },
   {
     "title": "Marcela Brand dentista Petrópolis",
@@ -584,7 +602,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:18:44.433Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -596,8 +614,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": false,
-    "siteUrl": ""
+    "mapsUrl": "https://www.google.com/maps/place/Marcela+Brand+dentista+Petr%C3%B3polis/data=!4m7!3m6!1s0x990986c0da1acf:0xa51f55893c2be623!8m2!3d-22.5118138!4d-43.1771639!16s%2Fg%2F11ykq6gh3g!19sChIJzxrawIYJmQARI-YrPIlVH6U?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "Clínica Odonto ProFácil",
@@ -644,7 +664,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:18:45.758Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -656,8 +676,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": false,
-    "siteUrl": ""
+    "mapsUrl": "https://www.google.com/maps/place/Cl%C3%ADnica+Odonto+ProF%C3%A1cil/data=!4m7!3m6!1s0x99a7002104e75f:0x70f0f56b2cdf2f8a!8m2!3d-22.5253899!4d-43.1713484!16s%2Fg%2F11zb5pc057!19sChIJX-cEIQCnmQARii_fLGv18HA?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "Sorrisos da Posse - Clínica Odontológica",
@@ -704,7 +726,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:18:47.123Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -716,8 +738,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": true,
-    "siteUrl": "https://www.instagram.com/sorrisosdaposse?igsh=MW9mZG5ueGtmZm93dQ=="
+    "mapsUrl": "https://www.google.com/maps/place/Sorrisos+da+Posse+-+Cl%C3%ADnica+Odontol%C3%B3gica/data=!4m7!3m6!1s0x9851ac1da5bf63:0x1098d6fabb2735f7!8m2!3d-22.2525299!4d-43.0737201!16s%2Fg%2F11srglg5k_!19sChIJY7-lHaxRmAAR9zUnu_rWmBA?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": "https://www.instagram.com/sorrisosdaposse?igsh=MW9mZG5ueGtmZm93dQ==",
+    "temSite": false
   },
   {
     "title": "Dra Tatiane Albino Odontopediatra & Ortodontista (não atendemos convênios)",
@@ -764,7 +788,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:18:49.958Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -776,8 +800,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": true,
-    "siteUrl": "https://dratatianealbino.my.canva.site/"
+    "mapsUrl": "https://www.google.com/maps/place/Dra+Tatiane+Albino+Odontopediatra+%26+Ortodontista+%28n%C3%A3o+atendemos+conv%C3%AAnios%29/data=!4m7!3m6!1s0x99a7ffb68f98c1:0xee331bfd8cf6f8a6!8m2!3d-22.507934!4d-43.1728242!16s%2Fg%2F11f__pyn0d!19sChIJwZiPtv-nmQARpvj2jP0bM-4?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": "https://dratatianealbino.my.canva.site/",
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "YuME Odontologia",
@@ -824,7 +850,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:18:51.291Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -836,8 +862,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": false,
-    "siteUrl": ""
+    "mapsUrl": "https://www.google.com/maps/place/YuME+Odontologia/data=!4m7!3m6!1s0x99a7d887d815b3:0x1d48a7bb0cb99934!8m2!3d-22.5314504!4d-43.1728053!16s%2Fg%2F11v48sy9qd!19sChIJsxXYh9inmQARNJm5DLunSB0?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "Dra Mariana Antunes - Odontopediatria e Ortodontia",
@@ -884,7 +912,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:18:53.904Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -896,8 +924,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": true,
-    "siteUrl": "https://www.instagram.com/dramarianantunes/"
+    "mapsUrl": "https://www.google.com/maps/place/Dra+Mariana+Antunes+-+Odontopediatria+e+Ortodontia/data=!4m7!3m6!1s0x990803a5e46ec5:0xc69b82e1b2f3581b!8m2!3d-22.5118138!4d-43.1771639!16s%2Fg%2F11c1s3g50m!19sChIJxW7kpQMImQARG1jzsuGCm8Y?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": "https://www.instagram.com/dramarianantunes/",
+    "temSite": false
   },
   {
     "title": "Sorria Rio - Três Rios",
@@ -944,7 +974,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:19:02.823Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -956,8 +986,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": false,
-    "siteUrl": ""
+    "mapsUrl": "https://www.google.com/maps/place/Sorria+Rio+-+Tr%C3%AAs+Rios/data=!4m7!3m6!1s0x98f742724b49fd:0x98424d99bd96faa6!8m2!3d-22.1142324!4d-43.2083362!16s%2Fg%2F11kmczg7ys!19sChIJ_UlLckL3mAARpvqWvZlNQpg?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "Dentista Três Rios - Beatriz Peyroton",
@@ -1004,7 +1036,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:19:04.275Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -1016,8 +1048,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": true,
-    "siteUrl": "https://www.instagram.com/beatrizpeyroton/"
+    "mapsUrl": "https://www.google.com/maps/place/Dentista+Tr%C3%AAs+Rios+-+Beatriz+Peyroton/data=!4m7!3m6!1s0x98f7a67e6b8a35:0xcc12f63b158ae5a6!8m2!3d-22.1152274!4d-43.2116713!16s%2Fg%2F11m_5b6cv0!19sChIJNYprfqb3mAARpuWKFTv2Esw?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": "https://www.instagram.com/beatrizpeyroton/",
+    "temSite": false
   },
   {
     "title": "Clínica Perfil Odonto e Face - Clínica Odontológica | Implantes Dentários | Invisalign | Facetas",
@@ -1064,7 +1098,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:19:05.639Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -1076,8 +1110,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": true,
-    "siteUrl": "https://wa.me/5524981594625?text=Ol%C3%A1%2C%20vim%20pelo%20google%20e%20gostaria%20de%20agendar%20uma%20consulta"
+    "mapsUrl": "https://www.google.com/maps/place/Cl%C3%ADnica+Perfil+Odonto+e+Face+-+Cl%C3%ADnica+Odontol%C3%B3gica+%7C+Implantes+Dent%C3%A1rios+%7C+Invisalign+%7C+Facetas/data=!4m7!3m6!1s0x98f67e44d3ef21:0x807b1d4f34a532bc!8m2!3d-22.1156591!4d-43.2115681!16s%2Fg%2F11c549d67g!19sChIJIe_TRH72mAARvDKlNE8de4A?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": "https://wa.me/5524981594625?text=Ol%C3%A1%2C%20vim%20pelo%20google%20e%20gostaria%20de%20agendar%20uma%20consulta",
+    "instagramUrl": "https://instagram.com/perfilodonto?igshid=1rhxeied0kb66",
+    "temSite": false
   },
   {
     "title": "OdontoCompany Três Rios",
@@ -1124,7 +1160,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:19:07.049Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -1136,8 +1172,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": true,
-    "siteUrl": "https://www.instagram.com/odontocompanytresriosrj/?hl=en"
+    "mapsUrl": "https://www.google.com/maps/place/OdontoCompany+Tr%C3%AAs+Rios/data=!4m7!3m6!1s0x98f737029b4247:0x5ff1b781bda33b9c!8m2!3d-22.1154791!4d-43.2112383!16s%2Fg%2F11h_wp22p4!19sChIJR0KbAjf3mAARnDujvYG38V8?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": "https://www.instagram.com/odontocompanytresriosrj/?hl=en",
+    "temSite": false
   },
   {
     "title": "Cavasi Odontologia | Clínica odontológica em Três Rios | Dentistas especialistas em Implante Dentário e ortodontia",
@@ -1184,7 +1222,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:19:08.573Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -1196,8 +1234,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": true,
-    "siteUrl": "https://bit.ly/cavasi-tres-rios"
+    "mapsUrl": "https://www.google.com/maps/place/Cavasi+Odontologia+%7C+Cl%C3%ADnica+odontol%C3%B3gica+em+Tr%C3%AAs+Rios+%7C+Dentistas+especialistas+em+Implante+Dent%C3%A1rio+e+ortodontia/data=!4m7!3m6!1s0x98f7b5e48f7dc1:0xbfaa3d5881799186!8m2!3d-22.116246!4d-43.2121439!16s%2Fg%2F11sjrv1z4d!19sChIJwX2P5LX3mAARhpF5gVg9qr8?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": "https://bit.ly/cavasi-tres-rios",
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "Essenza Odontologia Integrada",
@@ -1244,7 +1284,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:19:10.467Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -1256,8 +1296,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": true,
-    "siteUrl": "https://www.instagram.com/essenza_orofacial?igsh=bnpsdjkwZWs0bXdh"
+    "mapsUrl": "https://www.google.com/maps/place/Essenza+Odontologia+Integrada/data=!4m7!3m6!1s0x98f7b0f83398d1:0x3136ca1f5bbe4f45!8m2!3d-22.1143777!4d-43.2079623!16s%2Fg%2F11zdrtl8g3!19sChIJ0Zgz-LD3mAARRU--Wx_KNjE?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": "https://www.instagram.com/essenza_orofacial?igsh=bnpsdjkwZWs0bXdh",
+    "temSite": false
   },
   {
     "title": "Consultório Odontológico Dra Flávia de Souza Carvalho",
@@ -1304,7 +1346,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:19:11.709Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -1316,8 +1358,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": false,
-    "siteUrl": ""
+    "mapsUrl": "https://www.google.com/maps/place/Consult%C3%B3rio+Odontol%C3%B3gico+Dra+Fl%C3%A1via+de+Souza+Carvalho/data=!4m7!3m6!1s0x98f67c19534163:0x2bc338912a5766bf!8m2!3d-22.1144458!4d-43.2088195!16s%2Fg%2F1thtfb_9!19sChIJY0FTGXz2mAARv2ZXKpE4wys?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "Sorriso TR",
@@ -1364,7 +1408,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:19:12.996Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -1376,8 +1420,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": false,
-    "siteUrl": ""
+    "mapsUrl": "https://www.google.com/maps/place/Sorriso+TR/data=!4m7!3m6!1s0x98f787386239d7:0x8e41c8498a9d324f!8m2!3d-22.115023!4d-43.2075441!16s%2Fg%2F11zkt195bj!19sChIJ1zliOIf3mAARTzKdiknIQY4?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "Clinica Renata Cirilo",
@@ -1424,7 +1470,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:19:14.271Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -1436,8 +1482,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": false,
-    "siteUrl": ""
+    "mapsUrl": "https://www.google.com/maps/place/Clinica+Renata+Cirilo/data=!4m7!3m6!1s0x98f70ac4723351:0x58c8b913ab1955f0!8m2!3d-22.1148044!4d-43.209718!16s%2Fg%2F11m6wcq0xb!19sChIJUTNyxAr3mAAR8FUZqxO5yFg?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "Dra Clarissa Marques | Dentista | Alinhador Invisível | SouSmile | Botox | Clareamento | Três Rios",
@@ -1484,7 +1532,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:19:15.622Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -1496,8 +1544,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": true,
-    "siteUrl": "https://instagram.com/dra.clarissamarques?igshid=MmIzYWVlNDQ5Yg=="
+    "mapsUrl": "https://www.google.com/maps/place/Dra+Clarissa+Marques+%7C+Dentista+%7C+Alinhador+Invis%C3%ADvel+%7C+SouSmile+%7C+Botox+%7C+Clareamento+%7C+Tr%C3%AAs+Rios/data=!4m7!3m6!1s0x98f709ace46e87:0x3ae3020363087c09!8m2!3d-22.1157966!4d-43.2090563!16s%2Fg%2F11ksv3ll2x!19sChIJh27krAn3mAARCXwIYwMC4zo?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": "https://instagram.com/dra.clarissamarques?igshid=MmIzYWVlNDQ5Yg==",
+    "temSite": false
   },
   {
     "title": "Dra. Daniella Rossini",
@@ -1544,7 +1594,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:19:16.890Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -1556,8 +1606,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": true,
-    "siteUrl": "https://www.facebook.com/cetrotresrios/videos/?ref=page_internal"
+    "mapsUrl": "https://www.google.com/maps/place/Dra.+Daniella+Rossini/data=!4m7!3m6!1s0x98f7ef6b57660b:0xd91fad803119b171!8m2!3d-22.1165874!4d-43.2102914!16s%2Fg%2F11q254vm_r!19sChIJC2ZXa-_3mAARcbEZMYCtH9k?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": "https://www.facebook.com/cetrotresrios/videos/?ref=page_internal",
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "Fernanda Piazzi Clínica Geral e Odontopediatria CRO-RJ 34285",
@@ -1604,7 +1656,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:19:18.296Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -1616,8 +1668,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": true,
-    "siteUrl": "https://m.facebook.com/drafernandapiazzi/"
+    "mapsUrl": "https://www.google.com/maps/place/Fernanda+Piazzi+Cl%C3%ADnica+Geral+e+Odontopediatria+CRO-RJ+34285/data=!4m7!3m6!1s0x98f75913ebbb2d:0x5a50287a2e3b4a36!8m2!3d-22.1162466!4d-43.2055472!16s%2Fg%2F11jnx5_2_v!19sChIJLbvrE1n3mAARNko7LnooUFo?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": "https://m.facebook.com/drafernandapiazzi/",
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "Dra. Mariana Helena Cirurgiã-Dentista",
@@ -1664,7 +1718,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:19:21.833Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -1676,68 +1730,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": true,
-    "siteUrl": "https://api.whatsapp.com/send/?phone=5524999281008&text&type=phone_number&app_absent=0"
-  },
-  {
-    "title": "Dra Patrícia Fernandes - Harmonização Facial",
-    "subTitle": null,
-    "description": null,
-    "ownerDescription": null,
-    "price": null,
-    "categoryName": "dentista",
-    "address": "Centro Empresarial Zilda Mattos - R. Quinze de Novembro, 402 - Segundo andar sala 206 - Três Rios, RJ, 25804-000",
-    "neighborhood": null,
-    "street": null,
-    "city": "Três Rios",
-    "postalCode": null,
-    "state": "Rio de Janeiro",
-    "countryCode": "BR",
-    "phone": "(24) 98110-9712",
-    "phoneUnformatted": "24981109712",
-    "claimThisBusiness": true,
-    "location": {
-      "lat": null,
-      "lng": null
-    },
-    "locatedIn": null,
-    "floor": null,
-    "plusCode": null,
-    "menu": null,
-    "servicesLink": null,
-    "totalScore": null,
-    "permanentlyClosed": false,
-    "temporarilyClosed": false,
-    "placeId": null,
-    "categories": [
-      "dentista"
-    ],
-    "fid": null,
-    "cid": null,
-    "reviewsCount": 0,
-    "reviewsDistribution": {
-      "oneStar": 0,
-      "twoStar": 0,
-      "threeStar": 0,
-      "fourStar": 0,
-      "fiveStar": 0
-    },
-    "imagesCount": 0,
-    "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
-    "reserveTableUrl": null,
-    "googleFoodUrl": null,
-    "hotelStars": null,
-    "hotelDescription": null,
-    "checkInDate": null,
-    "checkOutDate": null,
-    "hotelAds": [],
-    "popularTimesLiveText": null,
-    "popularTimesLivePercent": null,
-    "popularTimesHistogram": {},
-    "openingHours": [],
-    "temSite": true,
-    "siteUrl": "https://www.instagram.com/drapatriciajfernandes?stkn=NzVveWMxZW1yYmN3&utm_source=qr"
+    "mapsUrl": "https://www.google.com/maps/place/Dra.+Mariana+Helena+Cirurgi%C3%A3-Dentista/data=!4m7!3m6!1s0x98f7ecdb7ad0a3:0xff4d78b5e3d35fe2!8m2!3d-22.1146506!4d-43.2107751!16s%2Fg%2F11y33h3w55!19sChIJo9B62-z3mAAR4l_T47V4Tf8?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": "https://api.whatsapp.com/send/?phone=5524999281008&text&type=phone_number&app_absent=0",
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "Consult Odontologia",
@@ -1784,7 +1780,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:19:23.158Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -1796,8 +1792,72 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": false,
-    "siteUrl": ""
+    "mapsUrl": "https://www.google.com/maps/place/Consult+Odontologia/data=!4m7!3m6!1s0x9962cf0a0417dd:0xb367583ac4730801!8m2!3d-22.1180724!4d-43.2049401!16s%2Fg%2F1tg51n3z!19sChIJ3RcECs9imQARAQhzxDpYZ7M?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": null,
+    "temSite": false
+  },
+  {
+    "title": "Dra Patrícia Fernandes - Harmonização Facial",
+    "subTitle": null,
+    "description": null,
+    "ownerDescription": null,
+    "price": null,
+    "categoryName": "dentista",
+    "address": "Centro Empresarial Zilda Mattos - R. Quinze de Novembro, 402 - Segundo andar sala 206 - Três Rios, RJ, 25804-000",
+    "neighborhood": null,
+    "street": null,
+    "city": "Três Rios",
+    "postalCode": null,
+    "state": "Rio de Janeiro",
+    "countryCode": "BR",
+    "phone": "(24) 98110-9712",
+    "phoneUnformatted": "24981109712",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": null,
+      "lng": null
+    },
+    "locatedIn": null,
+    "floor": null,
+    "plusCode": null,
+    "menu": null,
+    "servicesLink": null,
+    "totalScore": null,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": null,
+    "categories": [
+      "dentista"
+    ],
+    "fid": null,
+    "cid": null,
+    "reviewsCount": 0,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 0
+    },
+    "imagesCount": 0,
+    "imageCategories": [],
+    "scrapedAt": "2026-10-12T17:19:24.696Z",
+    "reserveTableUrl": null,
+    "googleFoodUrl": null,
+    "hotelStars": null,
+    "hotelDescription": null,
+    "checkInDate": null,
+    "checkOutDate": null,
+    "hotelAds": [],
+    "popularTimesLiveText": null,
+    "popularTimesLivePercent": null,
+    "popularTimesHistogram": {},
+    "openingHours": [],
+    "mapsUrl": "https://www.google.com/maps/place/Dra+Patr%C3%ADcia+Fernandes+-+Harmoniza%C3%A7%C3%A3o+Facial/data=!4m7!3m6!1s0x98f78f86055485:0xcf8b7f735b8692d8!8m2!3d-22.1159331!4d-43.2121815!16s%2Fg%2F11zylvgsm9!19sChIJhVQFho_3mAAR2JKGW3N_i88?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": "https://www.instagram.com/drapatriciajfernandes?stkn=NzVveWMxZW1yYmN3&utm_source=qr",
+    "temSite": false
   },
   {
     "title": "3DTR - Radiologia Odontológica",
@@ -1844,7 +1904,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:19:26.505Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -1856,68 +1916,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": false,
-    "siteUrl": ""
-  },
-  {
-    "title": "Dr. Euler Costa | Dentista (Ortodontia e Odontologia Estética Restauradora)",
-    "subTitle": null,
-    "description": null,
-    "ownerDescription": null,
-    "price": null,
-    "categoryName": "dentista",
-    "address": "R. Rita Cerqueira, 33 - Sl 102 - Três Rios, RJ, 25804-210",
-    "neighborhood": null,
-    "street": null,
-    "city": "Três Rios",
-    "postalCode": null,
-    "state": "Rio de Janeiro",
-    "countryCode": "BR",
-    "phone": "(24) 99282-0606",
-    "phoneUnformatted": "24992820606",
-    "claimThisBusiness": true,
-    "location": {
-      "lat": null,
-      "lng": null
-    },
-    "locatedIn": null,
-    "floor": null,
-    "plusCode": null,
-    "menu": null,
-    "servicesLink": null,
-    "totalScore": null,
-    "permanentlyClosed": false,
-    "temporarilyClosed": false,
-    "placeId": null,
-    "categories": [
-      "dentista"
-    ],
-    "fid": null,
-    "cid": null,
-    "reviewsCount": 0,
-    "reviewsDistribution": {
-      "oneStar": 0,
-      "twoStar": 0,
-      "threeStar": 0,
-      "fourStar": 0,
-      "fiveStar": 0
-    },
-    "imagesCount": 0,
-    "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
-    "reserveTableUrl": null,
-    "googleFoodUrl": null,
-    "hotelStars": null,
-    "hotelDescription": null,
-    "checkInDate": null,
-    "checkOutDate": null,
-    "hotelAds": [],
-    "popularTimesLiveText": null,
-    "popularTimesLivePercent": null,
-    "popularTimesHistogram": {},
-    "openingHours": [],
-    "temSite": false,
-    "siteUrl": ""
+    "mapsUrl": "https://www.google.com/maps/place/3DTR+-+Radiologia+Odontol%C3%B3gica/data=!4m7!3m6!1s0x98f67f36544f77:0x47c396c64978c6df!8m2!3d-22.1158691!4d-43.2090218!16s%2Fg%2F11bztj5r5w!19sChIJd09UNn_2mAAR38Z4ScaWw0c?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "Consultório Dra.Isadora Mendes",
@@ -1964,7 +1966,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:19:29.156Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -1976,8 +1978,72 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": true,
-    "siteUrl": "https://wa.me/message/I36UQM7MEH4ZD1"
+    "mapsUrl": "https://www.google.com/maps/place/Consult%C3%B3rio+Dra.Isadora+Mendes/data=!4m7!3m6!1s0x98f784dff9bbd7:0x86cded75baa63a75!8m2!3d-22.1165874!4d-43.2102914!16s%2Fg%2F11kqnbv_g_!19sChIJ17v534T3mAARdTqmunXtzYY?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": "https://wa.me/message/I36UQM7MEH4ZD1",
+    "instagramUrl": null,
+    "temSite": false
+  },
+  {
+    "title": "Dr. Euler Costa | Dentista (Ortodontia e Odontologia Estética Restauradora)",
+    "subTitle": null,
+    "description": null,
+    "ownerDescription": null,
+    "price": null,
+    "categoryName": "dentista",
+    "address": "R. Rita Cerqueira, 33 - Sl 102 - Três Rios, RJ, 25804-210",
+    "neighborhood": null,
+    "street": null,
+    "city": "Três Rios",
+    "postalCode": null,
+    "state": "Rio de Janeiro",
+    "countryCode": "BR",
+    "phone": "(24) 99282-0606",
+    "phoneUnformatted": "24992820606",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": null,
+      "lng": null
+    },
+    "locatedIn": null,
+    "floor": null,
+    "plusCode": null,
+    "menu": null,
+    "servicesLink": null,
+    "totalScore": null,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": null,
+    "categories": [
+      "dentista"
+    ],
+    "fid": null,
+    "cid": null,
+    "reviewsCount": 0,
+    "reviewsDistribution": {
+      "oneStar": 0,
+      "twoStar": 0,
+      "threeStar": 0,
+      "fourStar": 0,
+      "fiveStar": 0
+    },
+    "imagesCount": 0,
+    "imageCategories": [],
+    "scrapedAt": "2026-10-12T17:19:30.505Z",
+    "reserveTableUrl": null,
+    "googleFoodUrl": null,
+    "hotelStars": null,
+    "hotelDescription": null,
+    "checkInDate": null,
+    "checkOutDate": null,
+    "hotelAds": [],
+    "popularTimesLiveText": null,
+    "popularTimesLivePercent": null,
+    "popularTimesHistogram": {},
+    "openingHours": [],
+    "mapsUrl": "https://www.google.com/maps/place/Dr.+Euler+Costa+%7C+Dentista+%28Ortodontia+e+Odontologia+Est%C3%A9tica+Restauradora%29/data=!4m7!3m6!1s0x98f7dd64d1387f:0x3335eddb3a76e934!8m2!3d-22.1147892!4d-43.2097329!16s%2Fg%2F11tdtp0c3z!19sChIJfzjRZN33mAARNOl2OtvtNTM?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "Clínica Ribas Odontologia Especializada",
@@ -2024,7 +2090,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:19:33.069Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -2036,8 +2102,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": true,
-    "siteUrl": "https://www.instagram.com/clinicaribasodontologia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+    "mapsUrl": "https://www.google.com/maps/place/Cl%C3%ADnica+Ribas+Odontologia+Especializada/data=!4m7!3m6!1s0x98f7003b7d47cd:0xec9cd8ca89c6139f!8m2!3d-22.1130787!4d-43.2099624!16s%2Fg%2F11l_1fz6z3!19sChIJzUd9OwD3mAARnxPGicrYnOw?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": "https://www.instagram.com/clinicaribasodontologia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "temSite": false
   },
   {
     "title": "Consultório Dra Renata Maciel Fernandes Gomes",
@@ -2084,7 +2152,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:19:34.394Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -2096,8 +2164,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": false,
-    "siteUrl": ""
+    "mapsUrl": "https://www.google.com/maps/place/Consult%C3%B3rio+Dra+Renata+Maciel+Fernandes+Gomes/data=!4m7!3m6!1s0x98f67c19534163:0x338a8d2bb4aaec02!8m2!3d-22.1151002!4d-43.2077388!16s%2Fg%2F1tj34bnr!19sChIJY0FTGXz2mAARAuyqtCuNijM?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "Magrani & Mendonça Odontologia",
@@ -2144,7 +2214,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:19:35.775Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -2156,8 +2226,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": false,
-    "siteUrl": ""
+    "mapsUrl": "https://www.google.com/maps/place/Magrani+%26+Mendon%C3%A7a+Odontologia/data=!4m7!3m6!1s0x98f67ed171d871:0xe6209c28fa72046!8m2!3d-22.115947!4d-43.2089822!16s%2Fg%2F11by_z1k12!19sChIJcdhx0X72mAARRiCnj8IJYg4?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "Consultório Odontológico Dr. Filipe Taginato",
@@ -2204,7 +2276,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:19:38.480Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -2216,8 +2288,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": true,
-    "siteUrl": "https://sites.google.com/view/drfilipetaginato"
+    "mapsUrl": "https://www.google.com/maps/place/Consult%C3%B3rio+Odontol%C3%B3gico+Dr.+Filipe+Taginato/data=!4m7!3m6!1s0x98f7ec1c8e6f15:0x6107d3f0652de1bf!8m2!3d-22.1148013!4d-43.2066043!16s%2Fg%2F11pdgttt1t!19sChIJFW-OHOz3mAARv-EtZfDTB2E?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": "https://sites.google.com/view/drfilipetaginato",
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "DC Odontologia - Consultório Odontológico - Areal",
@@ -2264,7 +2338,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:19:42.153Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -2276,8 +2350,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": true,
-    "siteUrl": "https://wa.me/5524988821776?text=%20%2824%29%2098882-1776"
+    "mapsUrl": "https://www.google.com/maps/place/DC+Odontologia+-+Consult%C3%B3rio+Odontol%C3%B3gico+-+Areal/data=!4m7!3m6!1s0x985753de3ce5b5:0xb33ccffde6c80004!8m2!3d-22.2412138!4d-43.0988846!16s%2Fg%2F11g81tk74n!19sChIJteU83lNXmAARBADI5v3PPLM?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": "https://wa.me/5524988821776?text=%20%2824%29%2098882-1776",
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "OdontoCompany Areal",
@@ -2324,7 +2400,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:19:43.568Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -2336,8 +2412,10 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": false,
-    "siteUrl": ""
+    "mapsUrl": "https://www.google.com/maps/place/OdontoCompany+Areal/data=!4m7!3m6!1s0x9857004770a56f:0x6ef18fad4e978f4c!8m2!3d-22.230243!4d-43.1002457!16s%2Fg%2F11vsk_9xv6!19sChIJb6VwRwBXmAARTI-XTq2P8W4?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": null,
+    "instagramUrl": null,
+    "temSite": false
   },
   {
     "title": "Dra. Julia Stoepke | Implantes dentários",
@@ -2384,7 +2462,7 @@
     },
     "imagesCount": 0,
     "imageCategories": [],
-    "scrapedAt": "2026-10-12T17:09:42.421Z",
+    "scrapedAt": "2026-10-12T17:19:44.923Z",
     "reserveTableUrl": null,
     "googleFoodUrl": null,
     "hotelStars": null,
@@ -2396,7 +2474,9 @@
     "popularTimesLivePercent": null,
     "popularTimesHistogram": {},
     "openingHours": [],
-    "temSite": true,
-    "siteUrl": "http://wa.me/5524992640816"
+    "mapsUrl": "https://www.google.com/maps/place/Dra.+Julia+Stoepke+%7C+Implantes+dent%C3%A1rios/data=!4m7!3m6!1s0x9857b1bd0af565:0x25c648f80c035ac6!8m2!3d-22.2351316!4d-43.1021503!16s%2Fg%2F11qyqcn4lf!19sChIJZfUKvbFXmAARxloDDPhIxiU?authuser=0&hl=pt-BR&g_ep=EgoyMDI2MTAwNy4wIJJjKgBIAVAD&rclk=1",
+    "siteUrl": "http://wa.me/5524992640816",
+    "instagramUrl": null,
+    "temSite": false
   }
 ]
