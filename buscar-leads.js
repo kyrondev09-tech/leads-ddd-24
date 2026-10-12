@@ -2,10 +2,18 @@ const fs = require('fs');
 const path = require('path');
 const puppeteer = require('puppeteer');
 
-const CIDADES = ['Petrópolis', 'Três Rios', 'Areal', 'Paraíba do Sul'];
-const NICHOS = ['dentista', 'marmoraria', 'vidraçaria', 'oficina mecanica', 'estetica automotiva', 'pet shop'];
-const META = 40;
-const MAX_ROLAGENS = 12;
+const CIDADES = ['Petrópolis', 'Três Rios', 'Paraíba do Sul', 'Areal'];
+const BUSCAS = [
+  { termo: 'ar condicionado instalacao manutencao', categoria: 'Ar Condicionado' },
+  { termo: 'oficina mecanica auto center', categoria: 'Oficina Mecânica' },
+  { termo: 'dentista consultorio odontologico', categoria: 'Dentista' },
+  { termo: 'pet shop banho e tosa', categoria: 'Pet Shop' },
+  { termo: 'energia solar instalacao', categoria: 'Energia Solar' },
+  { termo: 'academia musculacao', categoria: 'Academia' },
+];
+const META = Number(process.env.META) || 300; // leads novos por execução, somados aos que já estão no leads.json
+const SALVAR_A_CADA = 15;
+const MAX_ROLAGENS = 45;
 const ARQUIVO = path.join(__dirname, 'leads.json');
 const UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36';
 
@@ -41,17 +49,6 @@ function limparUrl(url) {
   }
 }
 
-// Site quebrado (não responde / 404 / 5xx) ou que redireciona para um host genérico
-async function siteRuim(url) {
-  if (hostGenerico(url)) return true;
-  try {
-    const r = await fetch(url, { redirect: 'follow', signal: AbortSignal.timeout(8000), headers: { 'user-agent': UA } });
-    return r.status === 404 || r.status === 410 || r.status >= 500 || hostGenerico(r.url);
-  } catch {
-    return true;
-  }
-}
-
 function ehInstagram(url) {
   try {
     const host = new URL(url).hostname.replace(/^www\./, '');
@@ -71,16 +68,25 @@ function cidadeDoEndereco(endereco) {
   return CIDADES.find((c) => e.includes(semAcento(c))) || null;
 }
 
-const prioritarios = []; // sem site ou com site quebrado/genérico
-const reserva = []; // com site funcional, só usados se faltar lead
-const vistos = new Set(); // telefones e nome+cidade já aceitos
+const novos = []; // leads sem site próprio aceitos nesta execução
+const vistos = new Set(); // telefones e nomes já aceitos (inclui os do leads.json)
 const locaisVisitados = new Set();
+const idDoLocal = (url) => ((url || '').match(/!1s(0x[0-9a-f]+:0x[0-9a-f]+)/) || [])[1] || url;
+
+// Leads de execuções anteriores: são mantidos e servem para não repetir telefone/nome
+const existentes = fs.existsSync(ARQUIVO) ? JSON.parse(fs.readFileSync(ARQUIVO, 'utf8')) : [];
+for (const lead of existentes) {
+  if (lead.phoneUnformatted) vistos.add(lead.phoneUnformatted);
+  if (lead.title) vistos.add(semAcento(lead.title));
+  if (lead.mapsUrl) locaisVisitados.add(idDoLocal(lead.mapsUrl));
+}
 
 function salvar() {
-  const leads = [...prioritarios, ...reserva].slice(0, META);
-  fs.writeFileSync(ARQUIVO, JSON.stringify(leads, null, 2));
-  return leads;
+  fs.writeFileSync(ARQUIVO, JSON.stringify([...existentes, ...novos], null, 2));
 }
+
+// Pausa aleatória de 1 a 2 s entre consultas, para não disparar bloqueio/CAPTCHA
+const pausa = () => dormir(1000 + Math.random() * 1000);
 
 async function novaPagina(browser) {
   const page = await browser.newPage();
@@ -93,7 +99,8 @@ async function novaPagina(browser) {
     const url = req.url();
     const bloquear =
       ['image', 'font', 'media', 'ping'].includes(tipo) ||
-      (tipo === 'stylesheet' && process.env.MANTER_CSS !== '1') ||
+      // O CSS do próprio Maps tem de carregar: sem ele o painel deixa de rolar e a lista para nos 40 resultados
+      (tipo === 'stylesheet' && !/google\.com\/maps|gstatic\.com\/maps|\/maps\/_\//.test(url) && process.env.BLOQUEAR_CSS === '1') ||
       /\/maps\/vt|\/kh\?|googleusercontent\.com|gstatic\.com\/.*\.(png|jpg|svg|woff2?)|doubleclick|google-analytics|\/log204|\/gen_204/.test(url);
     if (bloquear) req.abort().catch(() => {});
     else req.continue().catch(() => {});
@@ -126,7 +133,7 @@ async function listarResultados(page, nicho, cidade) {
 
   let anterior = 0;
   let parado = 0;
-  for (let i = 0; i < MAX_ROLAGENS && parado < 3; i++) {
+  for (let i = 0; i < MAX_ROLAGENS && parado < 4; i++) {
     const { total, fim } = await page.evaluate(() => {
       const feed = document.querySelector('div[role="feed"]');
       const cartoes = feed.querySelectorAll('a.hfpxzc');
@@ -137,7 +144,10 @@ async function listarResultados(page, nicho, cidade) {
     if (fim) break;
     parado = total === anterior ? parado + 1 : 0;
     anterior = total;
-    await dormir(900);
+    // Rolagem "real" com a roda do rato sobre o painel, para disparar o carregamento de mais resultados
+    await page.mouse.move(250, 500);
+    await page.mouse.wheel({ deltaY: 3000 });
+    await dormir(1000);
   }
 
   return page.evaluate(() =>
@@ -229,12 +239,13 @@ function montarLead({ nome, nicho, cidade, telefone, digitos, endereco, mapsUrl,
 
 // Visita a ficha e classifica o lead. Devolve true se entrou nos prioritários.
 async function processar(page, candidato, nicho, cidadeBusca) {
-  const id = (candidato.href.match(/!1s(0x[0-9a-f]+:0x[0-9a-f]+)/) || [])[1] || candidato.href;
+  const id = idDoLocal(candidato.href);
   if (locaisVisitados.has(id)) return false;
   locaisVisitados.add(id);
 
   let dados;
   try {
+    await pausa();
     dados = await extrairLocal(page, candidato.href);
   } catch {
     return false;
@@ -248,7 +259,7 @@ async function processar(page, candidato, nicho, cidadeBusca) {
   const cidade = dados.endereco ? cidadeDoEndereco(dados.endereco) : cidadeBusca;
   if (!cidade) return false;
 
-  const chaveNome = `${semAcento(nome)}|${semAcento(cidade)}`;
+  const chaveNome = semAcento(nome);
   if (vistos.has(digitos) || vistos.has(chaveNome)) return false;
   vistos.add(digitos).add(chaveNome);
 
@@ -271,14 +282,16 @@ async function processar(page, candidato, nicho, cidadeBusca) {
     temSite,
   });
 
-  if (!temSite || (await siteRuim(siteUrl))) {
-    prioritarios.push(lead);
-    const motivo = temSite ? 'site quebrado' : instagramUrl ? 'só Instagram' : siteUrl ? 'link genérico' : 'sem site';
-    console.log(`  [${prioritarios.length}/${META}] ${nome} — ${lead.phone} (${motivo})`);
-    return true;
+  // Só entram leads sem site próprio (a oportunidade de venda)
+  if (temSite) return false;
+  novos.push(lead);
+  const motivo = instagramUrl ? 'só Instagram' : siteUrl ? 'link genérico' : 'sem site';
+  console.log(`  [${novos.length}/${META}] ${nicho} · ${cidade} · ${nome} — ${lead.phone} (${motivo})`);
+  if (novos.length % SALVAR_A_CADA === 0) {
+    salvar();
+    console.log(`  -- gravado: ${existentes.length + novos.length} leads no ficheiro (${novos.length} novos)`);
   }
-  reserva.push(lead);
-  return false;
+  return true;
 }
 
 (async () => {
@@ -295,56 +308,55 @@ async function processar(page, candidato, nicho, cidadeBusca) {
       '--lang=pt-BR',
     ],
   });
-  process.on('SIGINT', async () => {
+  const encerrar = async (codigo) => {
     salvar();
     await browser.close().catch(() => {});
-    process.exit(130);
-  });
+    process.exit(codigo);
+  };
+  process.on('SIGINT', () => encerrar(130));
+  process.on('SIGTERM', () => encerrar(143));
 
   const inicio = Date.now();
-  const comSitePendentes = []; // cartões com site próprio, visitados só se faltar lead
+  let bloqueado = false;
   try {
     const page = await novaPagina(browser);
 
-    busca: for (const nicho of NICHOS) {
+    busca: for (const { termo, categoria } of BUSCAS) {
       for (const cidade of CIDADES) {
         let cartoes = [];
         try {
-          cartoes = await listarResultados(page, nicho, cidade);
+          await pausa();
+          cartoes = await listarResultados(page, termo, cidade);
         } catch (e) {
-          console.log(`! Falha na busca "${nicho}" em ${cidade}: ${e.message}`);
-          continue;
+          console.log(`! Falha na busca "${termo}" em ${cidade}: ${e.message}`);
         }
-        // Sem site (ou só rede social) primeiro; os demais ficam para o fim
+        if (page.url().includes('/sorry/')) {
+          bloqueado = true;
+          break busca;
+        }
+        // Cartões com site próprio não são oportunidade: nem se visita a ficha
         const semSite = cartoes.filter((c) => !c.site || hostGenerico(limparUrl(c.site)));
-        const comSite = cartoes.filter((c) => !semSite.includes(c));
-        comSitePendentes.push(...comSite.map((c) => ({ ...c, nicho, cidade })));
-        console.log(`\n> "${nicho}" em ${cidade}: ${cartoes.length} resultados (${semSite.length} sem site próprio)`);
+        console.log(`\n> "${termo}" em ${cidade}: ${cartoes.length} resultados (${semSite.length} sem site próprio)`);
 
         for (const c of semSite) {
-          await processar(page, c, nicho, cidade);
-          if (prioritarios.length >= META) break busca;
+          await processar(page, c, categoria, cidade);
+          if (page.url().includes('/sorry/')) {
+            bloqueado = true;
+            break busca;
+          }
+          if (novos.length >= META) break busca;
         }
-        salvar();
-      }
-    }
-
-    // Faltou lead sem site: completa com os que têm site (os quebrados entram como prioritários)
-    if (prioritarios.length < META) {
-      console.log(`\n> Completando com estabelecimentos que têm site (${comSitePendentes.length} pendentes)...`);
-      for (const c of comSitePendentes) {
-        if (prioritarios.length + reserva.length >= META) break;
-        await processar(page, c, c.nicho, c.cidade);
       }
     }
   } finally {
     await browser.close().catch(() => {});
   }
 
-  const leads = salvar();
-  const semSite = leads.filter((l) => !l.temSite).length;
-  console.log(`\n${leads.length} leads salvos em ${ARQUIVO} (${semSite} sem site) em ${Math.round((Date.now() - inicio) / 1000)}s`);
-  if (leads.length < META) console.log(`Atenção: só foram encontrados ${leads.length} leads válidos, abaixo da meta de ${META}.`);
+  salvar();
+  const segundos = Math.round((Date.now() - inicio) / 1000);
+  console.log(`\n${novos.length} leads novos + ${existentes.length} existentes = ${existentes.length + novos.length} em ${ARQUIVO}, em ${segundos}s`);
+  if (bloqueado) console.log('Atenção: o Google Maps pediu CAPTCHA; a recolha parou e o que já havia foi gravado.');
+  else if (novos.length < META) console.log(`Atenção: todas as buscas foram varridas e só havia ${novos.length} leads novos sem site, abaixo da meta de ${META}.`);
 })().catch((e) => {
   console.error('Erro fatal:', e);
   salvar();
