@@ -155,7 +155,7 @@ async function listarResultados(page, nicho, cidade) {
     [...document.querySelectorAll('div[role="feed"] a.hfpxzc')].map((a) => {
       const cartao = a.closest('div.Nv2PK') || a.parentElement;
       const site = cartao.querySelector('a.lcr4fd, a[data-value="Website"], a[data-value="Site"]');
-      return { href: a.href, nome: a.getAttribute('aria-label') || '', site: site ? site.href : '' };
+      return { href: a.href, nome: a.getAttribute('aria-label') || '', site: site ? site.href : '', texto: cartao.innerText || '' };
     })
   );
 }
@@ -185,7 +185,12 @@ async function extrairLocal(page, href) {
     };
     // Instagram listado noutro ponto da ficha (ex.: secção de perfis na web)
     const instagram = document.querySelector('div[role="main"] a[href*="instagram.com"]');
+    const principal = document.querySelector('div[role="main"]')?.innerText || '';
     return {
+      categoria: (document.querySelector('button.DkEaL')?.innerText || '').trim(),
+      fechado: /fechado (temporariamente|permanentemente)|(temporarily|permanently) closed/i.test(principal),
+      // Cardápio e botões de pedido/reserva: também podem apontar para um site ou sistema próprio
+      outrosLinks: [...document.querySelectorAll('a[data-item-id="menu"], a[data-item-id^="action:"]')].map((a) => a.href),
       nome: (document.querySelector('h1.DUwDvf')?.innerText || '').trim(),
       telefone: tel ? rotulo(tel) || tel.getAttribute('data-item-id').replace('phone:tel:', '') : '',
       endereco: rotulo(document.querySelector('[data-item-id="address"]')),
@@ -344,8 +349,8 @@ async function atualizarAvaliacoes(page) {
   return false;
 }
 
-(async () => {
-  const browser = await puppeteer.launch({
+const abrirNavegador = () =>
+  puppeteer.launch({
     headless: true,
     args: [
       '--no-sandbox',
@@ -358,6 +363,12 @@ async function atualizarAvaliacoes(page) {
       '--lang=pt-BR',
     ],
   });
+
+// Reutilizado pelo buscar-delivery.js
+module.exports = { abrirNavegador, novaPagina, listarResultados, extrairLocal, hostGenerico, limparUrl, semAcento, pausa, idDoLocal };
+
+if (require.main === module) (async () => {
+  const browser = await abrirNavegador();
   const encerrar = async (codigo) => {
     salvar();
     await browser.close().catch(() => {});
